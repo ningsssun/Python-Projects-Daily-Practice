@@ -84,4 +84,3 @@ if __name__ == "__main__":
                 email = Email()
                 email.send(message="Hey, new event was found!")
         time.sleep(2)
-
