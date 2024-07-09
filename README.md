@@ -1,7 +1,7 @@
 ## :rocket: Introduction
 
 #### 
-:wave:Welcome to my Python Daily Practice Repository! This repository is designed as a personal space where I explore and hone my Python programming skills. It includes a variety of Python scripts, small projects, and exercises that I've worked on to improve my understanding and proficiency in Python. I do everything related to Python in this repository, OOP, MySQL, SQLite, GUIS, Flask, Django, ML, data science, etc.
+:wave:Welcome to my Python Daily Practice Repository! This repository is designed as a personal space where I explore and hone my Python programming skills. It includes a variety of Python scripts, small projects, and exercises that I've worked on to improve my understanding and proficiency in Python. I do everything related to Python in this repository.
 
 ## :video_game: Technical Stacks
 
