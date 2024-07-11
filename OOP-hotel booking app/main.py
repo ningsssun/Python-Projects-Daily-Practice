@@ -28,6 +28,11 @@ class ReservationTicket:
         self.customer_name = customer_name
         self.hotel = hotel_object
 
+    @property
+    def clear_customer_name(self):
+        name = self.customer_name.strip().title()
+        return name
+
     def generate(self):
         content = f"""
         Thank you for your reservation!
@@ -61,6 +66,10 @@ class SecureCreditCard(CreditCard):
 
 print(df)
 hotel_ID = input("Enter the id of the hotel: ")
+# Check if the hotel ID exists in the DataFrame
+while not (df["id"] == hotel_ID).any():
+    print("Sorry, we don't have this hotel on the list.")
+    hotel_ID = input("Enter the id of the hotel: ")
 hotel = Hotel(hotel_ID)
 
 if hotel.available():
