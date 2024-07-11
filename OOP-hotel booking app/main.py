@@ -37,7 +37,7 @@ class ReservationTicket:
         content = f"""
         Thank you for your reservation!
         Here are your booking data:
-        Name: {self.customer_name}
+        Name: {self.clear_customer_name}
         Hotel name: {self.hotel.name}
         """
         return content
