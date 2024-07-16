@@ -1,6 +1,6 @@
 from openai import OpenAI
 
-client = OpenAI(api_key="sk-None-13N7OzHP3u8vNC9TPRdZT3BlbkFJo27Nivzzr4YFV27OP4m5")
+client = OpenAI(api_key="api secret key")
 
 
 class Chatbot:
