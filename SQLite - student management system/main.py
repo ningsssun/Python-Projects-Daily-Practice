@@ -170,6 +170,13 @@ class EditDialog(QDialog):
         # Refresh the table
         main_window.load_data()
 
+        self.close()
+
+        confirmation_widget = QMessageBox()
+        confirmation_widget.setWindowTitle("Success")
+        confirmation_widget.setText("The record was updated successfully!")
+        confirmation_widget.exec()
+
 
 class DeleteDialog(QDialog):
     def __init__(self):
@@ -252,6 +259,9 @@ class InsertDialog(QDialog):
         cursor = connection.cursor()
         cursor.execute("INSERT INTO students (name, course, mobile) VALUES (?, ?, ?)",
                        (name, course, mobile))
+
+        self.close()
+
         connection.commit()
         cursor.close()
         connection.close()
